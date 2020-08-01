@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Wi-Fi Info</title>
+</head>
+<body>
+<form name="myform" action="/save/" method="POST">
+{% csrf_token %}
+<center>
+	<br><br><br><br>
+Wi-Fi Name:<input type="text" name="name"><br><br>
+Password:<input type="password" name="password"><br><br>
+<button type="submit">Save</button>
+</center>
+</form>
+</body>
+</html>
